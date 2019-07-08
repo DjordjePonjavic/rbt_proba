@@ -1,6 +1,13 @@
 from flask import Flask
 
-app = Flask(__name__)
+from config.development import Development as config
+
+def create_app(conf):
+    app = Flask(__name__)
+    app.config_from_object(conf)
+    return app
+
+app = create_app(config)
 
 @app.route("/")
 def hello():
