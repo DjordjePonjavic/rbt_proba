@@ -10,7 +10,3 @@ class Measurement(db.Model) :
     humidity = Column(Float,nullable=False)
     temperature = Column(Float,nullable=False)
     timestamp =  Column(DateTime, nullable=False,default=datetime.utcnow)
-    y = Column(Float,nullable=False)
-    z = Column(Float,nullable=False)
-
-p = Column(Float,nullable=False)

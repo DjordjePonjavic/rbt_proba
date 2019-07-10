@@ -10,3 +10,7 @@ class Config:
     DB_PASSWD = None
     DB_HOST = None
     DB_PORT = None
+    BASIC_AUTH_USERNAME = 'user'
+    BASIC_AUTH_PASSWORD = 'pass'
+    BASIC_AUTH_FORCE = True
+
